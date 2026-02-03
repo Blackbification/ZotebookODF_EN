@@ -1,74 +1,74 @@
-# Guía para contribuir
+# Contributing Guide
 
-¡Gracias por tu interés en contribuir a NotebookLM ↔ Zotero Sync! 
+Thanks for your interest in contributing to ZotebookODF!
 
-## 🚀 Primeros pasos
+## 🚀 Getting Started
 
-1. **Fork** el repositorio
-2. **Clona** tu fork:
-   ```bash
-   git clone https://github.com/TU-USUARIO/notebooklm-zotero-sync.git
-   ```
-3. **Crea una rama** para tu cambio:
-   ```bash
-   git checkout -b feature/mi-mejora
-   ```
+1. **Fork** the repository
+2. **Clone** your fork:
+```bash
+   git clone https://github.com/YOUR-USERNAME/ZotebookODF.git
+```
+3. **Create a branch** for your changes:
+```bash
+   git checkout -b feature/my-improvement
+```
 
-## 🔧 Desarrollo local
+## 🔧 Local Development
 
-1. Abre `chrome://extensions/` en Chrome
-2. Activa "Modo de desarrollador"
-3. Clic en "Cargar descomprimida" y selecciona la carpeta del proyecto
-4. Haz cambios en el código
-5. Haz clic en el botón de recarga (🔄) en la extensión para ver los cambios
+1. Open `chrome://extensions/` in Chrome
+2. Enable "Developer mode"
+3. Click "Load unpacked" and select the project folder
+4. Make your code changes
+5. Click the reload button (🔄) on the extension to see your changes
 
-## 📝 Convenciones
+## 📝 Conventions
 
 ### Commits
-Usa mensajes descriptivos en español o inglés:
-- `feat: añade soporte para formato AMA`
-- `fix: corrige regex que afectaba IL-6`
-- `docs: actualiza README con nuevas instrucciones`
+Use descriptive commit messages:
+- `feat: add support for AMA format`
+- `fix: correct regex affecting IL-6`
+- `docs: update README with new instructions`
 
-### Código
-- Usa `const` y `let`, nunca `var`
-- Comenta las partes complejas
-- Mantén funciones pequeñas y con un solo propósito
+### Code
+- Use `const` and `let`, never `var`
+- Comment complex sections
+- Keep functions small and single-purpose
 
-## 🐛 Reportar bugs
+## 🐛 Reporting Bugs
 
-Abre un [issue](https://github.com/tu-usuario/notebooklm-zotero-sync/issues) con:
-- Descripción del problema
-- Pasos para reproducirlo
-- Captura de pantalla (si aplica)
-- Output de la consola (F12 → Console)
+Open an [issue](https://github.com/Blackbification/ZotebookODF_EN/issues) with:
+- Problem description
+- Steps to reproduce
+- Screenshot (if applicable)
+- Console output (F12 → Console)
 
-## 💡 Sugerir mejoras
+## 💡 Suggesting Improvements
 
-¿Tienes una idea? ¡Genial! Abre un issue con la etiqueta `enhancement` y describe:
-- Qué problema resuelve
-- Cómo debería funcionar
-- Mockups o ejemplos (si tienes)
+Have an idea? Great! Open an issue with the `enhancement` label and describe:
+- What problem it solves
+- How it should work
+- Mockups or examples (if available)
 
 ## 🔀 Pull Requests
 
-1. Asegúrate de que tu código funciona
-2. Actualiza el README si añades funcionalidad
-3. Describe qué hace tu PR y por qué
-4. Referencia el issue relacionado (si existe)
+1. Make sure your code works
+2. Update the README if you add functionality
+3. Describe what your PR does and why
+4. Reference the related issue (if any)
 
-## 🎯 Áreas donde necesitamos ayuda
+## 🎯 Areas Where We Need Help
 
-- **Regex**: Mejorar la detección de citas sin afectar texto normal
-- **UI/UX**: Hacer la interfaz más intuitiva
-- **Tests**: Añadir pruebas automatizadas
-- **Documentación**: Mejorar guías y ejemplos
-- **Internacionalización**: Soporte para otros idiomas
+- **Regex**: Improve citation detection without affecting normal text
+- **UI/UX**: Make the interface more intuitive
+- **Tests**: Add automated testing
+- **Documentation**: Improve guides and examples
+- **Internationalization**: Support for other languages
 
-## ❓ Preguntas
+## ❓ Questions
 
-¿Dudas? Abre un issue con la etiqueta `question` o contacta al autor.
+Questions? Open an issue with the `question` label or contact the author.
 
 ---
 
-¡Gracias por contribuir! 🙏
+Thanks for contributing! 🙏
