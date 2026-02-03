@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZotebookODF</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <header class="header">
+    <span class="logo">📚 ZotebookODF</span>
+  </header>
+
+  <main>
+    <!-- Zotero Library -->
+    <section class="card">
+      <div class="card-title">
+        <span class="num">1</span>
+        Zotero Library
+      </div>
+      <div class="card-body">
+        <div id="noLibrary">
+          <p class="hint">Export your collection as CSL JSON</p>
+          <label class="upload-btn">
+            <input type="file" id="zoteroFile" accept=".json">
+            📁 Load JSON
+          </label>
+        </div>
+        <div id="hasLibrary" class="hidden">
+          <div class="status-ok">
+            ✓ <span id="libCount">0</span> references
+            <button id="clearLib" class="btn-link">change</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Captured references -->
+    <section class="card">
+      <div class="card-title">
+        <span class="num">2</span>
+        Captured References
+        <span class="badge" id="refCount">0</span>
+        <button id="refreshData" class="btn-icon">🔄</button>
+      </div>
+      <div class="card-body">
+        <p class="hint">In NotebookLM, click each citation number (1, 2, 3...) to capture which paper it belongs to</p>
+        <div id="referencesList" class="refs-list">
+          <p class="hint">References will appear here</p>
+        </div>
+        <button id="clearCitations" class="btn-secondary btn-small">🗑️ Clear</button>
+      </div>
+    </section>
+
+    <!-- Export -->
+    <section class="card">
+      <div class="card-title">
+        <span class="num">3</span>
+        Export
+      </div>
+      <div class="card-body">
+        <select id="citationStyle">
+          <option value="vancouver">Vancouver</option>
+          <option value="apa">APA</option>
+          <option value="harvard">Harvard</option>
+        </select>
+        <button id="copyText" class="btn-primary">📋 Copy All</button>
+        <button id="exportZotero" class="btn-secondary">📥 TXT for Zotero ODF Scan</button>
+        <p class="hint" style="margin-top:8px;font-size:11px;">TXT: paste in Word → save .docx → Zotero ODF Scan</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="src/popup.js"></script>
+</body>
+</html>
